@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-------------------------------- COLLEGE HEADING ----------------------------------------------------- -->
+    <div class="heading" id="Home">
+        <h1 class="h1">MUTHURANGAM GOVERNMENT ARTS COLLEGE (AUTONOMOUS), VELLORE-632 002.</h1><br>
+        <h2 class="h2">APPLICATION FOR EXAMINATION</h2><br>
+        <h3 class="h3">PG: DEGREE EXAMINATIONS (NOV/MAY______)</marquee></h3>
+    </div>
+    <br>
+    <br>
+<!-- ------------------------------------MENUBAR----------------------------------------------------- -->
+    <div class="menu-bar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#pd1">Personal Details</a></li>
+            <li><a href="#Paper Codes">Paper Codes</a></li>
+            <li><a href="#Fee">Fee Details</a></li>
+        </ul>
+    </div>
+
+        <div class="d1">
+<form method="post" action="studetails.php" enctype="multipart/form-data" id="form1">
+            <label for="degree">Name of the Degree:</label>
+            <select name="degree" id="degree">
+                <option value="">--CHOOSE--</option>
+                <option value="B.A">B.A</option>
+                <option value="M.A">M.A</option>
+                <option value="B.sc">B.Sc</option>
+                <option value="M.sc">M.Sc</option>
+            </select>
+          </div>
+
+        <div class="d2">
+            <label for="dept">Department:</label>
+            <select name="department" id="dept">
+                <option value="">--CHOOSE--</option>
+                <option value="TAMIL">TAMIL</option>
+                <option value="ENGLISH">ENGLISH</option>
+                <option value="MATHS">MATHS</option>
+                <option value="PHYSICS">PHYSICS</option>
+                <option value="CHEMISTRY">CHEMISTRY</option>
+                <option value="COMPUTER SCIENCE">COMPUTER SCIENCE</option>
+
+            </select>
+        </div>
+
+        <!-- -----------------------------------PERSONAL DETAILS----------------------------------------------- -->
+        <div class="pd">
+            <h1 class="pd1" id="pd1" >PERSONAL DETAILS</h1><br>
+
+            <div class="container">
+                <input type="file" id="image-input" name="photo" accept="image/*">
+                <img id="passport-photo" class="passport-photo" src="#" alt="">
+                <label for="image-input" class="upload-button">Upload Photo</label>
+            </div>
+
+
+            <label for="regno">1. Register Number:</label>
+            <input type="text" id="regno1" name="regno" placeholder="Enter your Regno" " ">
+            <br><br>
+
+            <label for="name">2. Name of the candidate:</label>
+            <input type="text" id="name1" name="name" placeholder="Enter your Name" " ">
+            <br><br>
+
+            <label for="gender">3. Gender:</label>
+            <input type="radio" name="gender" value="Male">Male
+            <input type="radio" name="gender" value="Female">Female
+            <br><br>
+
+            <label for="dob">4. Date of Birth:</label>
+            <input type="date" name="dob" id="dob1">
+            <br><br>
+
+            <label for="nationality">5. Nationality:</label>
+            <input type="text" name="nationality" " ">
+            <br><br>
+
+            <label for="religion">6. Religion:</label>
+            <input type="text" name="religion" " ">
+            <br><br>
+
+            <label for="category">7. Category:</label>
+            <select name="category">
+                <option value="">--CHOOSE--</option>
+                <option value="BC">BC</option>
+                <option value="MBC">MBC</option>
+                <option value="SC">SC</option>
+                <option value="SCA">SCA</option>
+                <option value="BCM">BCM</option>
+                <option value="OTHERS">OTHERS</option>
+            </select>
+            <br><br>
+
+            <label for="father_name">8. Father's Name:</label>
+            <input type="text" name="father_name" " ">
+            <br><br>
+
+            <label for="mother_name">9. Mother's Name:</label>
+            <input type="text" name="mother_name" " ">
+            <br><br>
+
+            <label for="medium_of_study">10. Medium of study:</label>
+            <input type="radio" name="medium_of_study" value="Tamil">Tamil
+            <input type="radio" name="medium_of_study" value="English">English
+            <br><br>
+
+            <label for="physically_challenged">11. Physically Challenged:</label>
+            <input type="radio" name="physically_challenged" value="Yes">Yes
+            <input type="radio" name="physically_challenged" value="No">No
+            <br><br>
+
+            <label for="admission">12. Academic year of admission:</label>
+            <input type="text" name="admission" " ">
+            <br><br>
+
+            <label for="address">13. Address:</label>
+            <textarea name="address" cols="64" rows="10"></textarea>
+            <br><br>
+            
+        </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <!-- ---------------------------------------------PAPER CODES---------------------------------------------------- -->
+    <center><u><h1 id="Paper Codes">PAPER CODES WITH SUBJECTS</h1><br></center></u>
+
+    <div id="paper_code">
+
+            <table border="5">
+            <tr>
+                <th>TITLE OF THE PAPER</th>
+                <th>I</th>
+                <th>II </th>
+                <th>III</th>
+                <th>IV</th>
+                <th>V</th>
+                <th>VI</th>
+            </tr>
+
+            <tr>
+                <td><input  type="text" name="paper_1"></td>
+                <td><input  type="text" name="paper1_sem1"></td>
+                <td><input  type="text" name="paper1_sem2"></td>
+                <td><input  type="text" id="a1" name="paper1_sem3"></td>
+                <td><input  type="text" name="paper1_sem4"></td>
+                <td><input  type="text" name="paper1_sem5"></td>
+                <td><input  type="text" name="paper1_sem6"></td>
+            </tr>
+
+
+            <tr>
+                <td><input  type="text" name="paper_2"></td>
+                <td><input  type="text" name="paper2_sem1"></td>
+                <td><input  type="text" name="paper2_sem2"></td>
+                <td><input  type="text" id="b1" name="paper2_sem3"></td>
+                <td><input  type="text" name="paper2_sem4"></td>
+                <td><input  type="text" name="paper2_sem5"></td>
+                <td><input  type="text" name="paper2_sem6"></td>
+            </tr>
+
+            <tr>
+                <td><input  type="text" name="paper_3"></td>
+                <td><input  type="text" name="paper3_sem1"></td>
+                <td><input  type="text" name="paper3_sem2"></td>
+                <td><input  type="text" id="c1" name="paper3_sem3"></td>
+                <td><input  type="text" name="paper3_sem4"></td>
+                <td><input  type="text" name="paper3_sem5"></td>
+                <td><input  type="text" name="paper3_sem6"></td>
+            </tr>
+
+            <tr>
+                <td><input  type="text" name="paper_4"></td>
+                <td><input  type="text" name="paper4_sem1"></td>
+                <td><input  type="text" name="paper4_sem2"></td>
+                <td><input  type="text" id="d1" name="paper4_sem3"></td>
+                <td><input  type="text" name="paper4_sem4"></td>
+                <td><input  type="text" name="paper4_sem5"></td>
+                <td><input  type="text" name="paper4_sem6"></td>
+            </tr>
+
+            <tr>
+                <td><input  type="text" name="paper_5"></td>
+                <td><input  type="text" name="paper5_sem1"></td>
+                <td><input  type="text" name="paper5_sem2"></td>
+                <td><input  type="text" id="e1"name="paper5_sem3"></td>
+                <td><input  type="text" name="paper5_sem4"></td>
+                <td><input  type="text" name="paper5_sem5"></td>
+                <td><input  type="text" name="paper5_sem6"></td>
+            </tr>
+
+            <tr>
+                <td><input  type="text" name="paper_6"></td>
+                <td><input  type="text" name="paper6_sem1"></td>
+                <td><input  type="text" name="paper6_sem2"></td>
+                <td><input  type="text" id="f1"name="paper6_sem3"></td>
+                <td><input  type="text" name="paper6_sem4"></td>
+                <td><input  type="text" name="paper6_sem5"></td>
+                <td><input  type="text" name="paper6_sem6"></td>
+            </tr>
+
+            <tr>
+                <td><input  type="text" name="paper_7"></td>
+                <td><input  type="text" name="paper7_sem1"></td>
+                <td><input  type="text" name="paper7_sem2"></td>
+                <td><input  type="text"  id="g1" name="paper7_sem3"></td>
+                <td><input  type="text" name="paper7_sem4"></td>
+                <td><input  type="text" name="paper7_sem5"></td>
+                <td><input  type="text" name="paper7_sem6"></td>
+            </tr>
+
+
+            <tr>
+                <td><input  type="text" name="paper_8"></td>
+                <td><input  type="text" name="paper8_sem1"></td>
+                <td><input  type="text" name="paper8_sem2"></td>
+                <td><input  type="text" name="paper8_sem3"></td>
+                <td><input  type="text" name="paper8_sem4"></td>
+                <td><input  type="text" name="paper8_sem5"></td>
+                <td><input  type="text" name="paper8_sem6"></td>
+            </tr>
+
+            <tr>
+            <td colspan="7"><center>PRACTICAL PAPERS</center></td>
+            </tr>
+
+            <tr>
+                <td><input  type="text" name="practical_1"></td>
+                <td><input  type="text" name="practical1_sem1"></td>
+                <td><input  type="text" name="practical1_sem2"></td>
+                <td><input  type="text" id="h1"name="practical1_sem3"></td>
+                <td><input  type="text" name="practical1_sem4"></td>
+                <td><input  type="text" name="practical1_sem5"></td>
+                <td><input  type="text" name="practical1_sem6"></td>
+            </tr>
+            <tr>
+                <td><input  type="text" name="practical_2"></td>
+                <td><input  type="text" name="practical2_sem1"></td>
+                <td><input  type="text" name="practical2_sem2"></td>
+                <td><input  type="text" id="i1" name="practical2_sem3"></td>
+                <td><input  type="text" name="practical2_sem4"></td>
+                <td><input  type="text" name="practical2_sem5"></td>
+                <td><input  type="text" name="practical2_sem6"></td>
+            </tr>
+
+            <tr>
+                <td><input  type="text" name="practical_3"></td>
+                <td><input  type="text" name="practical3_sem1"></td>
+                <td><input  type="text" name="practical3_sem2"></td>
+                <td><input  type="text"  id="j1"name="practical3_sem3"></td>
+                <td><input  type="text" name="practical3_sem4"></td>
+                <td><input  type="text" name="practical3_sem5"></td>
+                <td><input  type="text" name="practical3_sem6"></td>
+            </tr>
+
+            <tr>
+                <td><input  type="text" name="practical_4"></td>
+                <td><input  type="text" name="practical4_sem1"></td>
+                <td><input  type="text" name="practical4_sem2"></td>
+                <td><input  type="text" name="practical4_sem3"></td>
+                <td><input  type="text" name="practical4_sem4"></td>
+                <td><input  type="text" name="practical4_sem5"></td>
+                <td><input  type="text" name="practical4_sem6"></td>
+            </tr>
+            <tr>
+                <td><input  type="text" name="practical_5"></td>
+                <td><input  type="text" name="practical5_sem1"></td>
+                <td><input  type="text" name="practical5_sem2"></td>
+                <td><input  type="text" name="practical5_sem3"></td>
+                <td><input  type="text" name="practical5_sem4"></td>
+                <td><input  type="text" name="practical5_sem5"></td>
+                <td><input  type="text" name="practical5_sem6"></td>
+            </tr>
+            </table>
+    </div>
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+<br>
+
+<!-- -------------------------------------FEES TABLE--------------------------------------------------- -->
+<div class="fee" id="Fee">
+    <h3>Fee details:</h3>
+    <br>
+    
+    <table border="5">
+        <tr>
+            <th colspan="2">1. Theory Paper Fee</th>
+            <th colspan="2">2. Practical/Viva/Dissertation Fee</th>
+            <th rowspan="2">3. Penalty (Rs.)</th>
+            <th rowspan="2">4. Exam Application</th>
+            <th rowspan="2">5. Statement of Mark Cost (Rs.)</th>
+            <th rowspan="2">6. Consolidated Mark Statement (Rs.)</th>
+            <th rowspan="2">7. Provisional Cert Cost (Rs.)</th>
+            <th rowspan="2">8. Convocation Fee (Rs.)</th>
+            <th rowspan="2">9. Grand Total</th>
+        </tr>
+
+        <tr>
+            <th>Total No. of Papers</th>
+            <th>Total Amount (Rs.)</th>
+            <th>Total No. of Papers</th>
+            <th>Total Amount</th>
+        </tr>
+
+        <tr>
+            <td><input type="number" name="theory_total_paper" oninput="calculateTotal()"></td>
+            <td><input type="number" name="theory_total_fee" readonly></td>
+            <td><input type="number" name="practical_total_paper" oninput="calculateTotal()"></td>
+            <td><input type="number" name="practical_total_fee" readonly></td>
+            <td><input type="number" name="penalty" oninput="calculateTotal()"></td>
+            <td><input type="number" name="exam_application_cost" oninput="calculateTotal()"></td>
+            <td><input type="number" name="mark_statement_cost" oninput="calculateTotal()"></td>
+            <td><input type="number" name="consolidated_cost" oninput="calculateTotal()"></td>
+            <td><input type="number" name="Provisional_cost" oninput="calculateTotal()"></td>
+            <td><input type="number" name="convocation_cost" oninput="calculateTotal()"></td>
+            <td><input type="number" name="grand_total" readonly></td>  
+        </tr>
+    </table>
+</div>
+
+
+    <br>
+    <h3>Particulars of Payment in SBI,Bagayam:</h3>
+    <br>
+    <table class="CAD">
+        <tr>
+            <td><label>Challan No: <input type="text" name="Challan"></label></td>
+            <td><label>Amount Rs: <input type="text" name="Amount_Rs"></label></td>
+            <td><label>Date: <input type="date" name="C_Date"></label></td>
+        </tr>
+    </table>
+
+    <div class="button-container ">
+        <input type="reset" class="reset-button"> <input type="submit" class="next-button">
+    </div>
+
+  
+</form>
+
+    
+    <br>
+    <br>
+    <hr>
+    <br><br><br>
+    <script src="script.js"></script>
+    
+</body>
+</html>
+

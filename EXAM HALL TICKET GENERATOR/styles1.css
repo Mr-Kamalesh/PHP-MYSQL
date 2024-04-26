@@ -1,0 +1,110 @@
+/* ---------------------------------------------------------------------HALL TICKET------------------------------------------------------------------ */
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.hall-ticket {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px dashed #000;
+}
+
+.h4 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.h5 {
+    text-align: center;
+    font-size: 18px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.photo-container {
+    float: right;
+    text-align: center;
+}
+
+.passport-photo {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #000;
+}
+
+.pd2 {
+    padding: 20px;
+}
+
+.pca table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.pca th, .pca td {
+    border: 1px solid #000;
+    text-align: center;
+}
+
+.pca input {
+    width: 95%;
+    border: none;
+    background: transparent;
+}
+
+.spc table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.spc td {
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media (max-width: 600px) {
+    .hall-ticket {
+        padding: 10px;
+    }
+    .photo-container {
+        text-align: center;
+        float: none;
+    }
+    .passport-photo {
+        width: 100px;
+        height: 100px;
+    }
+    .pd2 {
+        padding: 10px;
+    }
+    .pca th, .pca td {
+        padding: 10px;
+    }
+}
+
+.print-button {
+    text-align: center;
+    margin-top: 20px; /* Added margin to separate from the content */
+}
+
+.print-button button, .print-button a {
+    background: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none; /* Added for consistent styling */
+    margin: 5px; /* Added spacing between buttons */
+}
+
+.print-button button:hover, .print-button a:hover {
+    background: #0056b3;
+}
+

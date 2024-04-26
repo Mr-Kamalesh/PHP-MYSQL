@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hall Ticket Form</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <form method="post" action="" id="form2">
+        <div class="hall-ticket" id="hall-ticket">
+            <h1 class="h5">MUTHURANGAM GOVERNMENT ARTS COLLEGE (AUTONOMOUS), VELLORE-632 002.</h1>
+            <h2 class="h4">HALL TICKET</h2>
+            <h3><center>PG DEGREE EXAMINATIONS: (NOV/MAY ______)</center></h3>
+
+            <div class="photo-container">
+                <img id="displayed-photo" class="passport-photo" src="#" alt="">
+            </div>
+
+            <div class="pd2">
+                <label for="name">Name:</label>
+                <input type="text" id="name2" name="Name" required>
+                <br><br>
+
+                <label for="date">DOB:</label>
+                <input type="date" id="dob2" name="Dob" required>
+                <br><br>
+
+                <label for="reg">RegNo:</label>
+                <input type="text" id="regno2" name="Regno" required>
+                <br><br>
+
+                <label>Signature of the Candidate</label>_______________________________
+                
+                <h3>Papers Code Appearing:</h3>
+                <div class="pca">
+                    <table border="3">
+                        <tr>
+                            <td rowspan="2">Regular</td>
+                            <td><input class="paper_table" id="a2" type="text" name="regular_subject_1"></td>
+                            <td><input class="paper_table" id="b2" type="text" name="regular_subject_2"></td>
+                            <td><input class="paper_table" id="c2" type="text" name="regular_subject_3"></td>
+                            <td><input class="paper_table" id="d2" type="text" name="regular_subject_4"></td>
+                            <td><input class="paper_table" id="e2" type="text" name="regular_subject_5"></td>
+                            <td>Total Paper</td>
+                            <td>Amount</td>
+                        </tr>
+                        <tr>
+                            <td><input class="paper_table" type="text" id="f2" name="regular_subject_6"></td>
+                            <td><input class="paper_table" type="text" id="g2" name="regular_subject_7"></td>
+                            <td><input class="paper_table" type="text" id="h2" name="regular_subject_8"></td>
+                            <td><input class="paper_table" type="text" id="i2" name="regular_subject_9"></td>
+                            <td><input class="paper_table" type="text" id="j2" name="regular_subject_10"></td>
+                            <td rowspan="3"><input class="paper_table" type="number" name="total_paper" id="total_paper_second_page"></td>
+                            <td rowspan="3"><input class="paper_table" type="number" name="total_amount" id="total_amount_second_page"></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">Arrear</td>
+                            <td><input class="paper_table" type="text" name="arrear_subject_1"></td>
+                            <td><input class="paper_table" type="text" name="arrear_subject_2"></td>
+                            <td><input class="paper_table" type="text" name="arrear_subject_3"></td>
+                            <td><input class="paper_table" type="text" name="arrear_subject_4"></td>
+                            <td><input class="paper_table" type="text" name="arrear_subject_5"></td>
+                        </tr>
+                        <tr>
+                            <td><input class="paper_table" type="text" name="arrear_subject_6"></td>
+                            <td><input class="paper_table" type="text" name="arrear_subject_7"></td>
+                            <td><input class="paper_table" type="text" name="arrear_subject_8"></td>
+                            <td><input class="paper_table" type="text" name="arrear_subject_9"></td>
+                            <td><input class="paper_table" type="text" name="arrear_subject_10"></td>
+                        </tr>
+                    </table>                </div>
+            </div>
+            <div class="spc">
+                <table>
+                    <tr>
+                        <td>Signature of the Candidate with Date</td>
+                        <td>Principal</td>
+                        <td>Controller of Examination</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="print-button">
+                <button onclick="window.print()">Print</button>
+            </div>
+            <!-- Add this button below your form -->
+            <div class="print-button">
+                <a href="login.html">Back to Home</a>
+            </div>
+
+        </div>
+    </form>
+    
+<script src="script1.js"></script>
+</body>
+</html>
